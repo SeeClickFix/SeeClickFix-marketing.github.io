@@ -36,7 +36,7 @@ summary {
     display: block
 }
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.25;
     font-weight: 400;
 }
@@ -246,6 +246,13 @@ p {
 .h3r {
     font-size: 1.25rem
 }
+.h4 {
+    font-size: 1.15rem;
+    -webkit-font-smoothing: antialiased;
+}
+.h4r {
+    font-size: 1.15rem;
+}
 @media (min-width: 768px) {
 	.h3r {font-size:1.5rem}
 }
@@ -446,7 +453,8 @@ body {
     display: none
 }
 @media (max-width: 768px) {
-	.mobile-show {display:block}
+    .mobile-show {display:block}
+    span.mobile-show {display:inline-block}
 	.mobile-hide {display:none}
 }
 .list-simple {
@@ -614,15 +622,30 @@ a {
     background-color: rgba(0,0,0,0.55)
 }
 
-.orange1 .bg-dynamic {background-color:#FF7631}
-.orange1 .bg-dynamic-a {background-color:rgba(236,78,0,0.75)}
-.link-orange1 {color:#777}
-.link-orange1:hover {color:#FF7631}
+.orange .bg-dynamic {background-color:#FF7631}
+.orange .bg-dynamic-a {background-color:rgba(236,78,0,0.75)}
+.link-orange {color:#777}
+.link-orange:hover {color:#FF7631}
 
-.green1 .bg-dynamic {background-color:#68dd55}
-.green1 .bg-dynamic-a {background-color:rgba(58,183,33,0.75)}
-.link-green1 {color:#777}
-.link-green1:hover {color:#68dd55}
+.green .bg-dynamic {background-color:#68dd55}
+.green .bg-dynamic-a {background-color:rgba(58,183,33,0.75)}
+.link-green {color:#777}
+.link-green:hover {color:#68dd55}
+
+.green2 .bg-dynamic {background-color:#578C40}
+.green2 .bg-dynamic-a {background-color:rgba(0,0,0,0.1)}
+.link-green2 {color:#777}
+.link-green2:hover {color:#578C40}
+
+.blue .bg-dynamic {background-color:#25A0CC}
+.blue .bg-dynamic-a {background-color:rgba(0,0,0,0.1)}
+.link-blue {color:#777}
+.link-blue:hover {color:#fff}
+
+.gray .bg-dynamic {background-color:#666666}
+.gray .bg-dynamic-a {background-color:rgba(0,0,0,0.1)}
+.link-gray {color:#1E1E1E}
+.link-gray:hover {color:#000}
 
 
 @-webkit-keyframes fill-color-fade {
